@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Rifa de una Moto 🏍️</title>
+  <title>Rifas La Sonaja 🏍️</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -61,11 +61,11 @@
 
   <!-- Tira que se mueve -->
   <marquee class="marquee" behavior="scroll" direction="left">
-    🎉 ¡RIFA DE UNA MOTO NUEVA! PARTICIPA YA POR SOLO $50 MXN 🎉
+    🎉 ¡RIFAS LA SONAJA: PARTICIPA EN NUESTRA RIFA DE UNA MOTO NUEVA POR SOLO $50 MXN 🎉
   </marquee>
 
   <div class="container">
-    <h1>🎉 ¡Gran Rifa: Gánate una MOTO!</h1>
+    <h1>🎉 Rifas La Sonaja: ¡Gánate una MOTO!</h1>
     <p><strong>Premio:</strong> Una motocicleta totalmente nueva 🏍️🔥</p>
     <p><strong>Costo del boleto:</strong> $50 MXN</p>
     <p><strong>Fecha del sorteo:</strong> 30 de junio de 2025</p>
