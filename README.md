@@ -65,7 +65,7 @@
   </marquee>
 
   <div class="container">
-    <h1>🎉 ¡Gran Rifa: Gánate una MOTO!</h1>
+    <h1>🎉 ¡Gran Rifa: Gánate una MOTO!</h1> 
     <p><strong>Premio:</strong> Una motocicleta totalmente nueva 🏍️🔥</p>
     <p><strong>Costo del boleto:</strong> $50 MXN</p>
     <p><strong>Fecha del sorteo:</strong> 30 de junio de 2025</p>
