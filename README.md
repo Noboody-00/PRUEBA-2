@@ -110,5 +110,136 @@
     </div>
   </div>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rifas La Sonaja - Compra y Ruleta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefae0;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 4px dashed darkkhaki;
+      background-color: #fff;
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #bc6c25;
+    }
+
+    input[type=number] {
+      width: 100px;
+      font-size: 18px;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 6px;
+      border: 2px solid darkkhaki;
+      text-align: center;
+    }
+
+    button {
+      background-color: #bc6c25;
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #dda15e;
+    }
+
+    #ruletaNumero {
+      font-size: 48px;
+      margin: 20px 0;
+      color: #bc6c25;
+      font-weight: bold;
+      height: 60px;
+    }
+
+    .info {
+      text-align: left;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Rifas La Sonaja: ¡Compra tu boleto y gira la ruleta!</h1>
+    
+    <label for="boleto">Selecciona tu número (1 - 30000):</label><br/>
+    <input type="number" id="boleto" min="1" max="30000" value="1" />
+    <button onclick="comprarBoleto()">Comprar boleto</button>
+
+    <hr />
+
+    <div>
+      <button onclick="girarRuleta()">🎡 Girar Ruleta</button>
+      <div id="ruletaNumero">--</div>
+    </div>
+
+    <div class="info">
+      <p><strong>Cómo funciona:</strong></p>
+      <ol>
+        <li>Escoge un número del 1 al 30000.</li>
+        <li>Compra tu boleto con ese número.</li>
+        <li>Gira la ruleta para seleccionar al ganador al azar.</li>
+      </ol>
+    </div>
+  </div>
+
+<script>
+  function comprarBoleto() {
+    const num = document.getElementById('boleto').value;
+    if (num < 1 || num > 30000) {
+      alert('Por favor, ingresa un número entre 1 y 30000.');
+      return;
+    }
+    const url = `https://wa.me/5215555555555?text=Hola,%20quiero%20comprar%20el%20boleto%20número%20${num}%20para%20la%20rifa%20de%20la%20moto`;
+    window.open(url, '_blank');
+  }
+
+  function girarRuleta() {
+    const display = document.getElementById('ruletaNumero');
+    let vueltas = 30; // número de cambios rápidos
+    let intervalo = 50; // velocidad inicial
+
+    let cuenta = 0;
+
+    const intervaloId = setInterval(() => {
+      const numeroAleatorio = Math.floor(Math.random() * 30000) + 1;
+      display.textContent = numeroAleatorio;
+      cuenta++;
+      // Aumentar intervalo para simular desaceleración
+      if (cuenta >= vueltas) {
+        clearInterval(intervaloId);
+      }
+    }, intervalo);
+  }
+</script>
+
 </body>
 </html>
+
+</body>
+</html>
+
+
